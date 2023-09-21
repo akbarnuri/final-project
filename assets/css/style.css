@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mooli&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Mooli', sans-serif;
+  color: #000000cf;
+}
+
+/* Site Header */
+
+#root > header {
+  font-family: 'Lato', sans-serif;
+  background-color: #ff230ba6;
+  color: white;
+  padding-block: 15px;
+}
+
+#root > header h1 {
+  text-transform: uppercase;
+}
+
+#root > footer {
+  background-color: #ff230ba6;
+  padding-block: 20px;
+  color: white;
+}
+
+nav {
+  background-color: #0000ff9a;
+  padding-block: 10px;
+  margin-inline: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 5px;
+  list-style: none;
+  color: white;
+}
+
+nav li::before {
+  content: '[ ';
+}
+
+nav li::after {
+  content: ' ]';
+}
+
+main {
+  background-color: whitesmoke;
+  color: #000000d4;
+  padding: 20px;
+  margin-inline: auto;
+  min-height: 50vh;
+}
+
+address {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+address > * {
+  background-color: #f6f8fa;
+  color: #656d76;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+}
+
+article {
+  width: 100%;
+}
+
+article header {
+  margin-bottom: 20px;
+}
+
+article p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+article footer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 25px;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+}
+
+/* Classes */
+
+.wrapper {
+  display: flex;
+  gap: 20px;
+  margin-inline: auto;
+  width: 60vw;
+}
+
+.photo {
+  width: 200px;
+  border-radius: 50px;
+}
+
+.center {
+  justify-content: center;
+}
+
+.summary {
+  margin-block: 20px;
+  font-size: 0.8rem;
+}
+
+.educational-backgrounds h2 {
+  font-size: 1rem;
+}
+
+.educational-backgrounds ul {
+  list-style: '✓';
+  padding-left: 20px;
+}
+
+.educational-backgrounds li {
+  padding: 10px;
+}
+
+.educational-backgrounds p {
+  font-size: 0.8rem;
+  padding-top: 5px;
+}
+
+/* IDs */
+
+#educational-backgrounds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+
+/* Media Queries */
+
+@media screen and (width <= 768px) {
+  #root > header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    column-gap: 10px;
+    row-gap: 5px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    width: 80vw;
+  }
+}
+
+footer div {
+    color: white;
+    background-color: burlywood;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15x;
+}
+
+header div {
+    text-align: center
+}
+
